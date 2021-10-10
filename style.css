@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #352da3e0;
+    background: linear-gradient(to bottom, #5d59b6, #d4139a91);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+form {
+    margin: 1rem;
+    top: 1rem;
+    right: 1rem;
+}
+
+form input {
+    background-color: #c7c2c2;
+    border-radius: 4rem;
+    border: none;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    color: #0f0f18;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.548);
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    background-color: #535085;
+    background: linear-gradient(100deg, #5d59b6 0%, #3e39a0e8 100%);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.avatar-img {
+    border: 1rem solid #2a2a72a4;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 2rem;
+}
+
+main .avatar-img {
+    display: block;
+    margin: auto;
+}
+
+.user-info {
+    color: #eee;
+    padding: 1rem;
+}
+
+.user-info h2 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.user-info p {
+    max-width: 400px;
+    padding: 1rem 0;
+}
+
+.user-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-bottom: 1rem;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: block;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color: #2a2a72a4;
+    border-radius: 0.3rem;
+    display: inline-block;
+    color: #eee;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+@media (min-width: 600px) {
+    form {
+        position: absolute;
+    }
+    main .avatar-img {
+        display: block;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 887px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+
+        max-width: 800px;
+    }
+}
